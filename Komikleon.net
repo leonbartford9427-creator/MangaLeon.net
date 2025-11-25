@@ -1,0 +1,105 @@
+manga-web/
+│── index.html
+│── style.css
+│── script.js
+└── images/
+      └── chapter1_page1.jpg
+      └── chapter1_page2.jpg
+      └── ... (gambar komik)
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manga Reader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Manga Reader</h1>
+</header>
+
+<div class="container">
+    <img id="mangaPage" src="images/chapter1_page1.jpg" alt="Manga Page">
+
+    <div class="controls">
+        <button onclick="prevPage()">Prev</button>
+        <span id="pageNumber">1</span>
+        <button onclick="nextPage()">Next</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    padding: 15px;
+    background-color: #222;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    border: none;
+    background: #ff4757;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e84118;
+}
+let currentPage = 1;
+const totalPages = 10; // jumlah halaman manga
+
+function updatePage() {
+    document.getElementById("mangaPage").src = `images/chapter1_page${currentPage}.jpg`;
+    document.getElementById("pageNumber").innerText = currentPage;
+}
+
+function nextPage() {
+    if (currentPage < totalPages) {
+        currentPage++;
+        updatePage();
+    }
+}
+
+function prevPage() {
+    if (currentPage > 1) {
+        currentPage--;
+        updatePage();
+    }
+}
+index.html
+style.css
+script.js
+images/
+git init
+git add .
+git commit -m "Initial manga website"
+git branch -M main
+git remote add origin https://github.com/USERNAME/manga-reader.git
+git push -u origin main
