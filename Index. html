@@ -1,0 +1,120 @@
+/komik-web
+   /assets
+       style.css
+       script.js
+   /img
+       cover1.jpg
+       chapter1-page1.jpg
+       chapter1-page2.jpg
+   index.html
+   komik.html
+   baca.html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Komik</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Web Komik</h1>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="komik.html">Daftar Komik</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Baca Komik Favoritmu Secara
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Komik</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Daftar Komik</h1>
+</
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Baca Komik</title>
+    <link rel="stylesheet" href="assets/style.css"
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+header {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.hero {
+    padding: 50px;
+    background: url('../img/cover1.jpg') center/cover;
+    text-align: center;
+    color: #fff;
+    backdrop-filter: blur(5px);
+}
+
+.komik-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.item {
+    background: #222;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.reader img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.nav-chapter {
+    text-align: center;
+    padding: 20px;
+}
+console.log("Web komik siap digunakan!");
